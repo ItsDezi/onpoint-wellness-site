@@ -1,7 +1,7 @@
 import Navigation from "@/components/Navigation";
 import ProviderCard from "@/components/ProviderCard";
 import florenceImg from "@/assets/provider-florence.jpg";
-import brookeImg from "@/assets/provider-brooke.jpg";
+import angieImg from "@/assets/provider-angie.jpg";
 import shannonImg from "@/assets/provider-shannon.jpg";
 import jessicaImg from "@/assets/provider-jessica.jpg";
 
@@ -13,9 +13,9 @@ const Providers = () => {
       image: florenceImg
     },
     {
-      name: "Brooke Hughes",
-      services: ["Massage Therapy", "Doula Services"],
-      image: brookeImg
+      name: "Angie Durgan",
+      services: ["Deep Tissue Massage", "Sports Massage", "Prenatal Massage", "Cupping Therapy", "Swedish Massage", "Trigger Point Therapy"],
+      image: angieImg
     },
     {
       name: "Shannon Bessette",
@@ -24,7 +24,7 @@ const Providers = () => {
     },
     {
       name: "Jessica Wimett",
-      services: ["Massage Therapy"],
+      services: ["Restorative Therapy", "Deep Tissue Massage", "Trigger Point Therapy", "Therapeutic Modalities"],
       image: jessicaImg
     }
   ];
