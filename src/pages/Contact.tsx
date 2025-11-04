@@ -7,26 +7,26 @@ const Contact = () => {
     {
       name: "Florence Reynaud",
       phone: "(518) 593-4254",
-      email: "[email protected]",
-      link: { text: "About me", url: "#" }
+      email: "flo@opwplattsburgh.com",
+      //link: { text: "About me", url: "#" }
     },
     {
-      name: "Brooke Hughes",
-      phone: "(518) 578-0896",
-      email: "[email protected]",
-      link: { text: "HalyconMassage.com", url: "https://halyconmassage.com" }
+      name: "Angie Durgan",
+      phone: "(518) 637-3948",
+      //email: "",
+      link: { text: "Holistic Hands Massage", url: "https://www.holistichandsmassage.net/" }
     },
     {
       name: "Shannon Bessette",
       phone: "(518) 578-8753",
-      email: "[email protected]",
+      email: "shannonbessettept@gmail.com",
       link: { text: "shannonbessettept.com", url: "https://shannonbessettept.com" }
     },
     {
       name: "Jessica Wimett",
       phone: "(518) 570-2255",
-      email: "[email protected]",
-      link: { text: "RitualMassage", url: "#" }
+      email: "Jess.RitualWellness@gmail.com",
+      link: { text: "RitualMassage", url: "https://www.facebook.com/RitualOnPointWellness/" }
     }
   ];
 
@@ -60,12 +60,15 @@ const Contact = () => {
                       {provider.phone}
                     </a>
                   </div>
+                  {provider.email && (
                   <div className="flex items-center gap-3 text-foreground">
                     <Mail className="w-5 h-5 text-secondary" />
                     <a href={`mailto:${provider.email}`} className="hover:text-primary transition-colors break-all">
                       {provider.email}
                     </a>
                   </div>
+                  )}
+                  {provider.link && (
                   <div className="flex items-center gap-3 text-foreground">
                     <ExternalLink className="w-5 h-5 text-secondary" />
                     <a 
@@ -77,6 +80,7 @@ const Contact = () => {
                       {provider.link.text}
                     </a>
                   </div>
+                  )}
                 </CardContent>
               </Card>
             ))}
@@ -90,14 +94,14 @@ const Contact = () => {
             <div className="bg-card rounded-lg overflow-hidden shadow-lg">
               <div className="aspect-video">
                 <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2918.8!2d-73.7!3d43.1!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDPCsDA2JzAwLjAiTiA3M8KwNDInMDAuMCJX!5e0!3m2!1sen!2sus!4v1234567890123!5m2!1sen!2sus&q=14+Latour+Ave"
+                  src="https://www.google.com/maps?q=14+Latour+Ave,+Plattsburgh,+NY+12901&output=embed"
                   width="100%"
                   height="100%"
                   style={{ border: 0 }}
                   allowFullScreen
                   loading="lazy"
                   referrerPolicy="no-referrer-when-downgrade"
-                  title="On Point Wellness location map at 14 Latour Ave"
+                  title="On Point Wellness location map at 14 Latour Ave, Plattsburgh, NY 12901"
                 />
               </div>
               <div className="p-6 bg-muted/30">
