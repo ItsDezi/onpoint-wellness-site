@@ -9,7 +9,7 @@ import galleryCranio from "@/assets/gallery-cranio.jpg";
 const Home = () => {
   const services = [
     {
-      title: "Massage Therapy",
+      title: "Massage Therapy ",
       description: "Massage therapy involves the manipulation of soft tissues, including muscles, tendons, and ligaments, to promote relaxation, reduce stress, and alleviate pain. Techniques vary widely, ranging from Swedish and deep tissue massage to sports and therapeutic massage. It is commonly used for its physical and mental health benefits, such as improved circulation, reduced muscle tension, and enhanced overall well-being."
     },
     {
